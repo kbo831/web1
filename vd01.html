@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0,maximum-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="익산 문화관광홈페이지">
+    <meta name="keywords" content="익산 놀거리, 익산 볼거리, 국화축제, 서동축제, 보석축제, 10월행사, 익산 맛집">
+    <meta name="description" content="익산문화관광 홈페이지입니다.">
+    <meta http-equiv="refresh" content="180">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <title>익산문화관광</title>
+   
+  
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="vd01.css">
+    <script async src="js/google_analyics.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    
+</head>
+    <style>
+    
+    </style>    
+
+<body>
+   
+       <div class="container">
+        <header class="hd">
+            <div class="hd_wrap">
+                <nav class="tnb">
+                    <ul class="t_left">
+                        <li><a href="">익산시청</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                    <!--input txt 부분 클래스 확인;input 체크박스는 속성적용하려는 태그영역앞에??-->
+                    <input type="checkbox" id="find_open_btn" >
+                    
+                    <div class="find_window">
+                        <form action="" class="form_box">
+                            <input type="text" id="keyword" class="find_txt" >
+                            <input type="submit" id="find_btn" class="find_btn">
+                        </form>
+                    </div>
+                
+                    <ul class="t_right">
+                        <li class="lang">
+                            <span class="cur_lang">language</span>
+                            <div class="lang_box">
+                                <a href="">ko</a>
+                                <a href="">en</a>
+                                <a href="">ch</a>
+                                <a href="">jp</a>  
+                            </div>
+                           
+                        </li>
+                        <li class="is">
+                            <a href=""></a>
+                        </li>
+                        <li class="find">
+                            <label for="find_open_btn" class="find_la"></label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--gnb시작-->
+            <div class="hd_wrap gnb_wrap">
+                <a href="index.html" class="logo"><img src ="./data/logo/iksan_logo.jpg" alt="로고"></a>
+                <nav class="gnb">
+                    <ul class="gnb_wrap">
+                        <li class="mn">
+                            <a href="">교통</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>시외버스</span></li>
+                                       
+                                    <li class="sub_br"><a href="">시외버스터미널</a></li>
+                                 </ul>
+                                  
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>고속버스</span></li>
+                                       
+                                    <li class="sub_br"><a href="">고속버스터미널</a></li>
+                                 </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>기차</span></li>
+                                       
+                                    <li class="sub_br"><a href="">익산역</a></li>
+                                 </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>시내교통</span></li>
+                                       
+                                    <li class="sub_br"><a href="">택시&Bus</a></li>
+                                 </ul>        
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">축제</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>축제1</span></li>
+                                    <li class="sub_br"><a href="">익산서동축제</a></li>
+                                </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>축제2</span></li>
+                                     <li class="sub_br" ><a href="">익산국화축제</a></li>
+                                </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>축제3</span> </li>
+                                    <li class="sub_br"><a href="">익산보석대축제</a></li>
+                                </ul>  
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">먹거리</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>먹자골목1</span></li>
+                                    <li class="sub_br"><a href="">창인동</a></li>
+                                </ul>  
+                                <ul class="sub_cate">  
+                                    <li class="sub_cate_tit">
+                                        <span>먹자골목2</span></li>
+                                    <li class="sub_br"><a href="">모현동</a></li>
+                                </ul> 
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>먹자골목3</span></li>
+                                     <li class="sub_br"><a href="">영등동</a></li>
+                                </ul>    
+                                <ul class="sub_cate"> 
+                                    <li class="sub_cate_tit"><span>먹자골목4</span></li>
+                                    <li class="sub_br"><a href="">어양동</a></li>
+                                </ul>
+                              
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">산책로</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit">
+                                        <span>산책로1 </span></li>
+                                      
+                                             <li class="sub_br"><a href="">모현동</a></li>
+                                </ul> 
+                                        
+                                 <ul class="sub_cate">   
+                                    <li class="sub_cate_tit">  <span>산책로2 </span></li>
+                                        
+                                    <li class="sub_br"><a href="">영등동</a></li>
+                                </ul>      
+                                <ul class="sub_cate">  
+                                    <li class="sub_cate_tit">  <span>산책로3 </span></li>
+                                     <li class="sub_br"><a href="">어양동</a></li>                            
+                                </ul>                              
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">역사&문화</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"> <span>백제문화 </span></li>
+                                    <li class="sub_br"><a href="">백제역사유적지구</a></li>
+                                </ul>
+                                <ul class="sub_cate">
+                                   <li class="sub_cate_tit">
+                                        <span>유적이야기 </span></li>
+                                        
+                                    <li class="sub_br"><a href="">서동과 선화이야기</a></li>
+                                </ul>
+                                <ul class="sub_cate">      
+                                     <li class="sub_cate_tit"><span>문화유산 </span></li>
+                                        
+                                    <li class="sub_br"><a href="">국가지정문화재</a></li>
+                                    <li class="sub_br"><a href="">익산시향토유적</a></li>    
+                                </ul>
+                         </div>  
+                     </li>        
+                 </ul>
+                     <ul>
+                        <li class="mn">
+                            <a href="">여행가이드</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"> <span>공지사항 </span></li>
+                                   <li class="sub_br"><a href="">공지사항</a></li>
+                                </ul> 
+                                <ul class="sub_cate">     
+                                    <li class="sub_cate_tit">  <span>관광안내 </span></li>
+                                       
+                                    <li class="sub_br"><a href="">관광안내소</a></li>
+                                </ul>  
+                                <ul class="sub_cate"> 
+                                    <li class="sub_cate_tit"> <span>관광영상 </span></li>
+                                    <li class="sub_br"><a href="">홍보영상</a></li>
+                                </ul>
+                                <ul class="sub_cate">        
+                                     <li class="sub_cate_tit">
+                                         <span>여행후기 </span></li>
+                                       
+                                    <li class="sub_br"><a href="">여행후기</a></li>                                 
+                                </ul>
+                            </div>  
+                        </li>        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="content">
+               <div class="sub_mian">
+                   <figure class="vs">
+                       <h2 class="page_tit1"> Amazing 익산 </h2>
+                       <p class="page_com1"> 행복한 품격도시 익산시 </p>
+                   </figure>
+                   <section class="page_container">
+                       <div class="page_header">
+                           <h2 class="page_tit2">여행가이드</h2>
+                              <div class="breadcrumb_box">
+                                   <h2 class="b_txt2">익산 홍보 동영상</h2>
+                            
+                                   <!--a넣어도 되고 안 넣어도 됨-->
+                                   <div class="bread_box">
+                                       <ul class="bread_lst">
+                                           <li>
+                                               <a href="index.html">Home</a></li>
+                                           <li>
+                                               <a href="">여행가이드</a>
+                                            </li>
+                                           <li>
+                                               <span>관광영상</span></li>
+                                           <li>
+                                               <a href="">홍보영상</a>
+                                            </li>
+                                       </ul>
+                                       <ul class="device_lst">
+                                           <li><a href="">공유</a></li>
+                                           <li><a href="">인쇄</a></li>
+                                           <li><a href="">정보</a></li>
+                                       </ul>
+                                   </div>
+
+                               </div>
+                               
+                        <div class="page_content">
+                            <aside class="left_bar">
+                                 <nav class="lnb">
+                                    <div class="lnb_item">
+                                         <input type="radio" name="radio" class="ra" id="ra1">
+                                         <input type="radio" name="radio" class="ra" id="ra2">
+                                         <input type="radio" name="radio" class="ra" id="ra3">
+                                         <input type="radio" name="radio" class="ra" id="ra4">
+                                         <input type="radio" name="radio" class="ra" id="ra5">
+                                         <input type="radio" name="radio" class="ra" id="ra6">
+                                         <ul class="ra_ul">
+                                             <li class="item01"> 
+                                                 <label for="ra1">교통</label>
+                                                 <ul class="sub">
+                                                    <li class="subcate">
+                                                        <span>시외버스</span>
+                                                         <a href="">시외버스터미널</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>고속버스</span>
+                                                         <a href="">고속버스터미널</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>기차</span>
+                                                         <a href="">익산역</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>시내교통</span>
+                                                         <a href="">택시&버스</a> 
+                                                    </li>
+                                                 </ul>
+                                             </li>
+                                             <li class="item02">
+                                                 <label for="ra2">축제</label>
+                                                 <ul class="sub">
+                                                     <li class="subcate">
+                                                        <span>축제1</span>
+                                                         <a href="">익산서동축제</a>
+                                                     </li>
+                                                     <li class="subcate">
+                                                        <span>축제2</span>
+                                                         <a href="">익산국화축제</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>축제3</span>
+                                                         <a href="">익산보석대축제</a>
+                                                    </li>
+                                                 </ul>
+                                             </li>
+                                             <li class="item03">
+                                                 <label for="ra3">먹거리</label>
+                                                 <ul class="sub">
+                                                     <li class="subcate">
+                                                        <span>먹자골목1</span>
+                                                         <a href="">창인동</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>먹자골목2</span>
+                                                         <a href="">모현동</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>먹자골목3</span>
+                                                         <a href="">영등동</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                         <span>먹자골목4</span>
+                                                         <a href="">어양동</a>
+                                                    </li>
+                                                 </ul>
+                                             </li>
+                                             <li class="item04">
+                                                 <label for="ra4">산책로</label>
+                                                 <ul class="sub">
+                                                     <li class="subcate">
+                                                         <span>산책로1</span>
+                                                         <a href="">모현동</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                         <span>산책로2</span>
+                                                         <a href="">영등동</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                         <span>산책로3</span>
+                                                         <a href="">어양동</a>
+                                                    </li>
+                                                 </ul>
+                                             </li>
+                                             <li class="item05">
+                                                 <label for="ra5">역사&문화</label>
+                                                 <ul class="sub">
+                                                     <li class="subcate">
+                                                         <span>백제문화</span>
+                                                         <a href="">백제역사지구</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>유적이야기</span>
+                                                         <a href="">서동과 선화이야기</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>문화유산</span>
+                                                         <a href="">국가지정문화재</a>
+                                                         <a href="">익산시향토문화제</a>
+                                                    </li>
+                                                 </ul>
+                                             </li>
+                                             <li class="item06" >
+                                                 <label for="ra6">여행가이드</label>
+                                                 <ul class="sub">
+                                                     <li class="subcate">
+                                                         <a href="">공지사항</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>관광안내</span>
+                                                         <a href="">관광안내소</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>관광영상</span>
+                                                         <a href="">홍보영상</a>
+                                                    </li>
+                                                     <li class="subcate">
+                                                        <span>여행후기</span>
+                                                         <a href="">여행후기</a>
+                                                    </li>
+                                                 </ul>
+                                             </li>
+                                         </ul>
+                                    </div>
+                                </nav>   
+
+                            </aside>  
+                                    
+                            <div class="right_bar">
+                                   <figure class="sub_img">
+                                       <h3 class="sub_img_txt"> 영상으로 보는<span class="btxt"> "품격있는 도시"</span></h3>
+                                       
+                                       <p>행복의 도시 익산으로 여러분을 초대합니다.</p>
+                                   </figure>
+                                   <div class="thum_box">
+                                       <p> 360도 동영상을 보시려면 컴퓨터에 최신 버전의 Chrome, Opera, Firefox 또는 MS Edge가 설치되어 있어야 합니다.</p>
+                                    </div>
+                                    <ul class="thum_lst">
+                                        <li class="item1">
+                                            <div class="off_box">
+                                                
+                                                <h3 class="thum_tit1">디지털 홍보영상(2012)</h3>
+                                             </div>
+                                             <a href="https://youtu.be/9P5mv8ZipuM" class="on_box">
+                                                 <h4 class="thumb_tit2">홍보1</h4>
+                                                 <h3 class="thumb_tit3"></h3>
+                                                 <span class="detail"> PLAY</span>
+                                             </a>
+                                         </li>
+                                         <li class="item2">
+                                            <div class="off_box">
+                                               
+                                                <h3 class="thum_tit1">익산문화관광(2016)</h3>
+                                             </div>
+                                             <a href="https://youtu.be/43OsAx_Ch2U" class="on_box">
+                                                 <h4 class="thumb_tit2">홍보2</h4>
+                                                 <h3 class="thumb_tit3"></h3>
+                                                 <span class="detail">  PLAY</span>
+                                             </a>
+                                         </li>
+                                         <li class="item3">
+                                            <div class="off_box">
+                                                
+                                                <h3 class="thum_tit1">Walk in 익산(2019)</h3>
+                                             </div>
+                                             <a href="https://youtu.be/2aS2nkrK9Ds" class="on_box">
+                                                 <h4 class="thumb_tit2">홍보3</h4>
+                                                 <h3 class="thumb_tit3"></h3>
+                                                 <span class="detail">  PLAY</span>
+                                             </a>
+                                         </li>
+                                         <li class="item4">
+                                            <div class="off_box">
+                                                
+                                                <h3 class="thum_tit1">고백의도시 익산(2019)</h3>
+                                             </div>
+                                             <a href="https://youtu.be/MwbYzrmUbxk" class="on_box">
+                                                 <h4 class="thumb_tit2">홍보4</h4>
+                                                 <h3 class="thumb_tit3"></h3>
+                                                 <span class="detail">PLAY</span>
+                                             </a>
+                                         </li>
+                                         <li class="item5">
+                                            <div class="off_box">
+                                               
+                                                <h3 class="thum_tit1">익산의 보물(2020)</h3>
+                                             </div>
+                                             <a href="https://youtu.be/vU3fFEpnDAY" class="on_box">
+                                                 <h4 class="thumb_tit2">홍보5</h4>
+                                                 <h3 class="thumb_tit3"></h3>
+                                                 <span class="detail">PLAY</span>
+                                             </a>
+                                         </li>
+                                         <li class="item6">
+                                            <div class="off_box">
+                                               
+                                                <h3 class="thum_tit1">홍보동영상(2021)<br>비공식 </h3>
+                                             </div>
+                                             <a href="https://youtu.be/pZjydoRw8S8" class="on_box">
+                                                 <h4 class="thumb_tit2">홍보6</h4>
+                                                 <h3 class="thumb_tit3"></h3>
+                                                 <span class="detail">PLAY</span>
+                                             </a>
+                                         </li>
+                                    </ul>
+                                    <div class="research_box">
+                                        <p class="research_p1">
+                                            <span class="re1"><strong>정보관리 </strong></span>
+                                            <span class="re2"><strong>담당부서:</strong> 문화관광산업과</span>
+                                            <span class="re3"><strong> 전화번호:</strong> 063-859-5778</span>
+                                            <span class="re4"><strong>최종수정일:</strong> 2020-01-16</span>
+                                        </p>
+                                        
+                                        <!--research form 태그기입 -->    
+                                        <form action="" class="search_frm" name="search_frm2">
+                                            <h3>이 페이지에서 제공하는 정보에 대하여 만족하십니까?</h3>
+                                                <div class="radio_box" >
+                                                    <input type="radio" name="research2" class="research_ra" checked>
+                                                    <label for="research21">매우만족</label>
+                                                    <input type="radio" name="research2" class="research_ra">
+                                                    <label for="research22">만족</label>
+                                                    <input type="radio" name="research2" class="research_ra">
+                                                    <label for="research23">보통</label>
+                                                    <input type="radio" name="research2" class="research_ra">
+                                                    <label for="research24">불만족</label>
+                                                    <input type="radio" name="research2" class="research_ra">
+                                                    <label for="research25">매우 불만족</label>
+                                                </div>
+                                                <div class="research_txt_box">
+                                                   
+                                                    <input type="text" value="입력" class="input_btn1">
+                                                    
+                                                    <input type="text" class="input_btn2" placeholder= "여러분의 소중한 의견을 입력해주세요." >
+                                                   
+                                                
+                                                
+                                                </div>
+                                        </form>             
+                                    </div>
+                             </div>
+                        </div>
+                     </div>
+             </section>
+              
+         </div>
+</main>
+        
+ <footer class="ft">
+            <div class="ft_wrap1">
+                <nav class="fnb">
+                    <ul >
+                        <li>
+                            <span></span>
+                            <ul class="popup">
+                                <li>
+                                    <a href="index.html">홈으로</a>
+                                </li>
+                                <li>
+                                    <a href="">익산시청</a>
+                                </li>
+                                <li>
+                                    <a href="">시청블로그</a>
+                                </li>
+                                <li>
+                                    <a href="">시청페이스북</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="ft_wrap2">
+                <ul class="ft_banner">
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner1.jpg" alt="이미지1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner2.jpg" alt="이미지2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner3.jpg" alt="이미지3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner4.jpg" alt="이미지4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner5.jpg" alt="이미지5">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner6.jpg" alt="이미지6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner7.jpg" alt="이미지7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner8.jpg" alt="이미지8">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft_wrap2">
+                <nav class="ft_link">
+                    <ul>
+                        <li><a href="">개인처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">저작권정책</a></li>
+                        <li><a href="">홈페이지의견접수</a></li>
+                        <li><a href="">익산문화관광재단</a></li>
+                    </ul>
+                </nav>
+                <div class="fnb_txt_box">
+                    <p>54622 전라북도 익산시 인북로32길 1 (남중동) l 대표전화 : 1577-0072</p>
+                    <p class="copyright">Copyright(c) 2015 IKSAN CITY. All rights Reserved.</p>
+                    <a href="" class="wamark"></a>
+                </div>
+            </div>
+        </footer>       
+          
+     
+
+        <div class="quick">
+            <ul>
+                <li class="item1">
+                    <a href="">
+                        <span class="qtxt">교통</span>
+                        <span class="qico"></span>
+                    </a>
+                </li>
+                <li class="item2">
+                    <a href="">
+                        <span class="qtxt">축제</span>
+                        <span class="qico"></span>
+                    </a>
+                </li>
+                <li class="item3">
+                    <a href="">
+                        <span class="qtxt">먹거리</span>
+                        <span class="qico"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        
+    </div>
+    
+</body>
+
+</html>
