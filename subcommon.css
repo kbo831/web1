@@ -71,50 +71,6 @@ font-size: 20px; }
 
 .ra { display: none; }
 
-/*right_bar*/
-.page_content .right_bar { width:calc(100%- 253px); margin: 0 auto; float:right; overflow: hidden; }
-
-.right_bar .sub_img { width:98%; height: 130px;  background-image: url("data/vd01/vd01_vs3_flow.jpg");  background-position: center center; background-repeat: no-repeat; margin: 0 auto; }
-
-/*텍스트 부분*/
-.right_bar .sub_img_txt, .right_bar .sub_img p { color: #000;  text-align: center; }
-.right_bar .sub_img_txt { font-size: 30px; line-height: 1.6; padding-top: 15px;}
-.right_bar .btxt {color: #000; font-size: 30px; text-align: center; }
-.right_bar .sub_img p {font-size: 20px; padding-top: 5px;}
-
-.thum_box { width: 98%; height:50px; border:1px double #ddd; border-radius: 5px; background-color: raba(241,240,240,0.5) ; margin:0 auto; margin-top: 10px; }
-
-.thum_box p {text-align: center; font-size:15px; line-height: 50px; }
-
-/*thum_lst 부분*/
-.thum_lst { width: 1050px; height: auto; }
-.thum_lst li {width: 335px; height:335px; float:left; margin: 7px; border:1px solid #ddd; box-sizing: border-box; position:relative;overflow: hidden;}
-
-/*off 박스: 이미지 다시 넣기*/
-.thum_lst li .off_box { display: block; width: 335px; height: 335px; overflow
-:hidden;  }
-
-.thum_lst .item1 .off_box { background-image: url(images/fix_con_01.jpg);}
-.thum_lst .item2 .off_box { background-image: url(images/fix_con_02.jpg);}
-.thum_lst .item3 .off_box { background-image: url(images/fix_con_03.jpg);}
-.thum_lst .item4 .off_box { background-image: url(images/fix_con_04.jpg);}
-.thum_lst .item5 .off_box { background-image: url(images/fix_con_05.jpg);}
-.thum_lst .item6 .off_box { background-image: url(images/fix_con_06.jpg);}
-
-
-
-.thum_lst li .off_box .thum_tit1 {position:absolute; left: 5%; top: 20px; color:#fff; font-size: 25px; text-shadow: 1px 1px 1px #000; width:300px; text-align: center;  }
-
-/* on 박스 */
-.thum_lst li .on_box {display: block; width: 335px; height: 335px; position: absolute; bottom:335px; left: 0; background-color: rgba(0,0,0,0.5); border:1px solid #ddd; box-sizing: border-box; transition:0.3s; }
-
-.thum_lst li .on_box .thumb_tit2 { text-align: center; font-size: 25px; width: 200px; margin:30% auto; color:#fff; text-shadow: 1px 1px 1px #000;}
-
-.thum_lst li .on_box .thumb_tit3 { text-align: center; font-size: 25px; width: 200px; margin:30% auto; color:#fff; text-shadow: 1px 1px 1px #000;}
-
-.thum_lst li .on_box .detail { display: block; width: 76px; height: 76px; position: absolute; top: 140px; left: 130px;  background-image: url(data/vd01/btn_movie_play.png); text-indent: -9999px;}
-
-.thum_lst li:hover .on_box { bottom:0;}
 
 /* research 박스*/
 .research_box { clear:both;  width: 1033px; margin:0 auto;  overflow: hidden; padding-top: 20px;}

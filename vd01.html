@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
+    
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0,maximum-scale=1"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--상위 한줄 익스플로러 10이하버전 셋-->
     <meta name="title" content="익산 문화관광홈페이지">
     <meta name="keywords" content="익산 놀거리, 익산 볼거리, 국화축제, 서동축제, 보석축제, 10월행사, 익산 맛집">
     <meta name="description" content="익산문화관광 홈페이지입니다.">
@@ -12,28 +13,57 @@
     <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
     <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
     <title>익산문화관광</title>
-   
-  
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="vd01.css">
+   <!--1.폰트셋.css 2.reset/clear.css/nomalize.css-->
+    <link rel="stylesheet" href="css/clear.css">
+
+    <!--공통, 메인 css링크-->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
+    <!--구글애널리틱스 소스코드-->
     <script async src="js/google_analyics.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+   <!--제이쿼리연결-->
+   <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/slider.js"></script>
+ 
+  <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+  <!--[if lte IE 9]
+    <script src="js/respond.js"></script>
+    <![endif]-->
+    <!--구글 애널리스틱 코드 복붙 : 얼마나 들어오는지 보려고-->
+    <script async src="googleanalytics.js"></script>
+  
+      
+    <script>
+    $(document).ready(function(){
+        //언어 설정
+        $(".cur_lang").click(function(){
+           $(".lang_box").toggleClass("on");
+        });
+        //스크롤시 검색창 사라짐
+        $(window).scroll(function(){
+           var par = parseInt($(this).scrollTop());
+           var chk = $("#find_open_btn").prop("checked");    
+            if(par>=200){
+                $("#find_open_btn").removeProp("checked");
+            }
+        });    
+    });    
     
+    </script>
 </head>
-    <style>
-    
-    </style>    
 
 <body>
-   
-       <div class="container">
+    <div class="container">
         <header class="hd">
             <div class="hd_wrap">
                 <nav class="tnb">
                     <ul class="t_left">
                         <li><a href="">익산시청</a></li>
-                        <li><a href="">회원가입</a></li>
-                        <li><a href="">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
                     </ul>
                     <!--input txt 부분 클래스 확인;input 체크박스는 속성적용하려는 태그영역앞에??-->
                     <input type="checkbox" id="find_open_btn" >
@@ -44,15 +74,15 @@
                             <input type="submit" id="find_btn" class="find_btn">
                         </form>
                     </div>
-                
+                    <!--:자바 on 클래스 사용 language 클릭시 cur_lang 박스보이게-->
                     <ul class="t_right">
-                        <li class="lang">
-                            <span class="cur_lang">language</span>
+                        <li class="cur_lang">
+                        <span>language</span>
                             <div class="lang_box">
-                                <a href="">ko</a>
-                                <a href="">en</a>
-                                <a href="">ch</a>
-                                <a href="">jp</a>  
+                                <a href="">korean</a>
+                                <a href="">english</a>
+                                <a href="">chinese</a>
+                                <a href="">jpanise</a>  
                             </div>
                            
                         </li>
@@ -71,7 +101,7 @@
                 <nav class="gnb">
                     <ul class="gnb_wrap">
                         <li class="mn">
-                            <a href="">교통</a>
+                            <a href="tr01">교통</a>
                             <div class="sub">
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"><span>시외버스</span></li>
@@ -202,7 +232,7 @@
                                 </ul>  
                                 <ul class="sub_cate"> 
                                     <li class="sub_cate_tit"> <span>관광영상 </span></li>
-                                    <li class="sub_br"><a href="">홍보영상</a></li>
+                                    <li class="sub_br"><a href="vd01.html">홍보영상</a></li>
                                 </ul>
                                 <ul class="sub_cate">        
                                      <li class="sub_cate_tit">
@@ -396,66 +426,66 @@
                                         <li class="item1">
                                             <div class="off_box">
                                                 
-                                                <h3 class="thum_tit1">디지털 홍보영상(2012)</h3>
+                                                <h3 class="thum_tit1">디지털 홍보영상</h3>
                                              </div>
                                              <a href="https://youtu.be/9P5mv8ZipuM" class="on_box">
                                                  <h4 class="thumb_tit2">홍보1</h4>
-                                                 <h3 class="thumb_tit3"></h3>
+                                                 <h3 class="thumb_tit3">(2012)</h3>
                                                  <span class="detail"> PLAY</span>
                                              </a>
                                          </li>
                                          <li class="item2">
                                             <div class="off_box">
                                                
-                                                <h3 class="thum_tit1">익산문화관광(2016)</h3>
+                                                <h3 class="thum_tit1">익산문화관광</h3>
                                              </div>
                                              <a href="https://youtu.be/43OsAx_Ch2U" class="on_box">
                                                  <h4 class="thumb_tit2">홍보2</h4>
-                                                 <h3 class="thumb_tit3"></h3>
+                                                 <h3 class="thumb_tit3">(2016)</h3>
                                                  <span class="detail">  PLAY</span>
                                              </a>
                                          </li>
                                          <li class="item3">
                                             <div class="off_box">
                                                 
-                                                <h3 class="thum_tit1">Walk in 익산(2019)</h3>
+                                                <h3 class="thum_tit1">Walk in 익산</h3>
                                              </div>
                                              <a href="https://youtu.be/2aS2nkrK9Ds" class="on_box">
                                                  <h4 class="thumb_tit2">홍보3</h4>
-                                                 <h3 class="thumb_tit3"></h3>
+                                                 <h3 class="thumb_tit3">(2019)</h3>
                                                  <span class="detail">  PLAY</span>
                                              </a>
                                          </li>
                                          <li class="item4">
                                             <div class="off_box">
                                                 
-                                                <h3 class="thum_tit1">고백의도시 익산(2019)</h3>
+                                                <h3 class="thum_tit1">고백의도시 익산</h3>
                                              </div>
                                              <a href="https://youtu.be/MwbYzrmUbxk" class="on_box">
                                                  <h4 class="thumb_tit2">홍보4</h4>
-                                                 <h3 class="thumb_tit3"></h3>
+                                                 <h3 class="thumb_tit3">(2019)</h3>
                                                  <span class="detail">PLAY</span>
                                              </a>
                                          </li>
                                          <li class="item5">
                                             <div class="off_box">
                                                
-                                                <h3 class="thum_tit1">익산의 보물(2020)</h3>
+                                                <h3 class="thum_tit1">익산의 보물</h3>
                                              </div>
                                              <a href="https://youtu.be/vU3fFEpnDAY" class="on_box">
                                                  <h4 class="thumb_tit2">홍보5</h4>
-                                                 <h3 class="thumb_tit3"></h3>
+                                                 <h3 class="thumb_tit3">(2020)</h3>
                                                  <span class="detail">PLAY</span>
                                              </a>
                                          </li>
                                          <li class="item6">
                                             <div class="off_box">
                                                
-                                                <h3 class="thum_tit1">홍보동영상(2021)<br>비공식 </h3>
+                                                <h3 class="thum_tit1">홍보동영상<br>비공식 </h3>
                                              </div>
                                              <a href="https://youtu.be/pZjydoRw8S8" class="on_box">
                                                  <h4 class="thumb_tit2">홍보6</h4>
-                                                 <h3 class="thumb_tit3"></h3>
+                                                 <h3 class="thumb_tit3">(2021)</h3>
                                                  <span class="detail">PLAY</span>
                                              </a>
                                          </li>

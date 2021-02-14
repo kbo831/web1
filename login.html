@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0,maximum-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--상위 한줄 익스플로러 10이하버전 셋-->
+    <meta name="title" content="익산 문화관광홈페이지">
+    <meta name="keywords" content="익산 놀거리, 익산 볼거리, 국화축제, 서동축제, 보석축제, 10월행사, 익산 맛집">
+    <meta name="description" content="익산문화관광 홈페이지입니다.">
+    <meta http-equiv="refresh" content="180">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <title>익산문화관광</title>
+   <!--1.폰트셋.css 2.reset/clear.css/nomalize.css-->
+    <link rel="stylesheet" href="css/clear.css">
+
+    <!--공통, 메인 css링크-->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="subcommon.css">
+    <!--구글애널리틱스 소스코드-->
+    <script async src="js/google_analyics.js"></script>
+   <!--제이쿼리연결-->
+   <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/slider.js"></script>
+ 
+  <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+  <!--[if lte IE 9]
+    <script src="js/respond.js"></script>
+    <![endif]-->
+    <!--구글 애널리스틱 코드 복붙 : 얼마나 들어오는지 보려고-->
+    <script async src="googleanalytics.js"></script>
+  
+      
+    <script>
+    $(document).ready(function(){
+        //언어 설정
+        $(".cur_lang").click(function(){
+           $(".lang_box").toggleClass("on");
+        });
+        //스크롤시 검색창 사라짐
+        $(window).scroll(function(){
+           var par = parseInt($(this).scrollTop());
+           var chk = $("#find_open_btn").prop("checked");    
+            if(par>=200){
+                $("#find_open_btn").removeProp("checked");
+            }
+        });    
+    });    
+    
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="hd">
+            <div class="hd_wrap">
+                <nav class="tnb">
+                    <ul class="t_left">
+                        <li><a href="">익산시청</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                    </ul>
+                    <!--input txt 부분 클래스 확인;input 체크박스는 속성적용하려는 태그영역앞에??-->
+                    <input type="checkbox" id="find_open_btn" >
+                    
+                    <div class="find_window">
+                        <form action="" class="form_box">
+                            <input type="text" id="keyword" class="find_txt" >
+                            <input type="submit" id="find_btn" class="find_btn">
+                        </form>
+                    </div>
+                    <!--:자바 on 클래스 사용 language 클릭시 cur_lang 박스보이게-->
+                    <ul class="t_right">
+                        <li class="cur_lang">
+                        <span>language</span>
+                            <div class="lang_box">
+                                <a href="">korean</a>
+                                <a href="">english</a>
+                                <a href="">chinese</a>
+                                <a href="">jpanise</a>  
+                            </div>
+                           
+                        </li>
+                        <li class="is">
+                            <a href=""></a>
+                        </li>
+                        <li class="find">
+                            <label for="find_open_btn" class="find_la"></label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--gnb시작-->
+            <div class="hd_wrap gnb_wrap">
+                <a href="index.html" class="logo"><img src ="./data/logo/iksan_logo.jpg" alt="로고"></a>
+                <nav class="gnb">
+                    <ul class="gnb_wrap">
+                        <li class="mn">
+                            <a href="tr01">교통</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>시외버스</span></li>
+                                       
+                                    <li class="sub_br"><a href="">시외버스터미널</a></li>
+                                 </ul>
+                                  
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>고속버스</span></li>
+                                       
+                                    <li class="sub_br"><a href="">고속버스터미널</a></li>
+                                 </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>기차</span></li>
+                                       
+                                    <li class="sub_br"><a href="">익산역</a></li>
+                                 </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>시내교통</span></li>
+                                       
+                                    <li class="sub_br"><a href="">택시&Bus</a></li>
+                                 </ul>        
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">축제</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>축제1</span></li>
+                                    <li class="sub_br"><a href="">익산서동축제</a></li>
+                                </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>축제2</span></li>
+                                     <li class="sub_br" ><a href="">익산국화축제</a></li>
+                                </ul>
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>축제3</span> </li>
+                                    <li class="sub_br"><a href="">익산보석대축제</a></li>
+                                </ul>  
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">먹거리</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>먹자골목1</span></li>
+                                    <li class="sub_br"><a href="">창인동</a></li>
+                                </ul>  
+                                <ul class="sub_cate">  
+                                    <li class="sub_cate_tit">
+                                        <span>먹자골목2</span></li>
+                                    <li class="sub_br"><a href="">모현동</a></li>
+                                </ul> 
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"><span>먹자골목3</span></li>
+                                     <li class="sub_br"><a href="">영등동</a></li>
+                                </ul>    
+                                <ul class="sub_cate"> 
+                                    <li class="sub_cate_tit"><span>먹자골목4</span></li>
+                                    <li class="sub_br"><a href="">어양동</a></li>
+                                </ul>
+                              
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">산책로</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit">
+                                        <span>산책로1 </span></li>
+                                      
+                                             <li class="sub_br"><a href="">모현동</a></li>
+                                </ul> 
+                                        
+                                 <ul class="sub_cate">   
+                                    <li class="sub_cate_tit">  <span>산책로2 </span></li>
+                                        
+                                    <li class="sub_br"><a href="">영등동</a></li>
+                                </ul>      
+                                <ul class="sub_cate">  
+                                    <li class="sub_cate_tit">  <span>산책로3 </span></li>
+                                     <li class="sub_br"><a href="">어양동</a></li>                            
+                                </ul>                              
+                            </div>  
+                        </li>        
+                    </ul>
+                    <ul>
+                        <li class="mn">
+                            <a href="">역사&문화</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"> <span>백제문화 </span></li>
+                                    <li class="sub_br"><a href="">백제역사유적지구</a></li>
+                                </ul>
+                                <ul class="sub_cate">
+                                   <li class="sub_cate_tit">
+                                        <span>유적이야기 </span></li>
+                                        
+                                    <li class="sub_br"><a href="">서동과 선화이야기</a></li>
+                                </ul>
+                                <ul class="sub_cate">      
+                                     <li class="sub_cate_tit"><span>문화유산 </span></li>
+                                        
+                                    <li class="sub_br"><a href="">국가지정문화재</a></li>
+                                    <li class="sub_br"><a href="">익산시향토유적</a></li>    
+                                </ul>
+                         </div>  
+                     </li>        
+                 </ul>
+                     <ul>
+                        <li class="mn">
+                            <a href="">여행가이드</a>
+                            <div class="sub">
+                                <ul class="sub_cate">
+                                    <li class="sub_cate_tit"> <span>공지사항 </span></li>
+                                   <li class="sub_br"><a href="">공지사항</a></li>
+                                </ul> 
+                                <ul class="sub_cate">     
+                                    <li class="sub_cate_tit">  <span>관광안내 </span></li>
+                                       
+                                    <li class="sub_br"><a href="">관광안내소</a></li>
+                                </ul>  
+                                <ul class="sub_cate"> 
+                                    <li class="sub_cate_tit"> <span>관광영상 </span></li>
+                                    <li class="sub_br"><a href="vd01.html">홍보영상</a></li>
+                                </ul>
+                                <ul class="sub_cate">        
+                                     <li class="sub_cate_tit">
+                                         <span>여행후기 </span></li>
+                                       
+                                    <li class="sub_br"><a href="">여행후기</a></li>                                 
+                                </ul>
+                            </div>  
+                        </li>        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="sub_mian">
+                <figure class="vs">
+                    <h2 class="page_tit1"> Amazing 익산 </h2>
+                    <p class="page_com1"> 행복한 품격도시 익산시 </p>
+                </figure>
+                <section class="page_container">
+                    <div class="page_header">
+                        <h2 class="page_tit2">이용안내</h2>
+                        <div class="breadcrumb_box">
+                            <h2 class="b_txt2">로그인</h2>
+
+                            <!--a넣어도 되고 안 넣어도 됨-->
+                            <div class="bread_box">
+                                <ul class="bread_lst">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="">로그인</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="page_content">
+                            <aside class="left_bar">
+                                <nav class="lnb">
+                                    <div class="lnb_item">
+                                        <input type="radio" name="radio" class="ra" id="ra1">
+                                        <input type="radio" name="radio" class="ra" id="ra2">
+                                        <input type="radio" name="radio" class="ra" id="ra3">
+                                        <input type="radio" name="radio" class="ra" id="ra4">
+                                      
+                                        <ul class="ra_ul">
+                                            <li class="item01">
+                                                <label for="ra1">회원가입</label>
+                                                <ul class="sub">
+                                                    <li class="subcate">
+                                                        <a href="">회원가입</a>
+
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <a href="">회원탈퇴</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item02">
+                                                <label for="ra2"> 정보 변경</label>
+
+                                                <ul class="sub">
+                                                    <li class="subcate">
+
+                                                        <a href="">개인정보 변경</a>
+                                                    </li>
+                                                    <li class="subcate">
+
+                                                        <a href="">비밀번호 변경</a>
+                                                    </li>
+                                                </ul>
+
+
+                                            <li class="item03">
+
+                                                <label for="ra3">분실 및 신고</label>
+                                                <ul class="sub">
+                                                    <li class="subcate">
+
+                                                        <a href="">아이디 찾기</a>
+                                                    </li>
+                                                    <li class="subcate">
+
+                                                        <a href="">비밀번호 찾기</a>
+                                                    </li>
+                                                    <li class="subcate">
+
+                                                        <a href="">신고센터</a>
+                                                    </li>
+                                                   
+                                                </ul>
+
+                                            </li>
+                                            <li class="item04">
+                                              <label for="ra4"><a href="">사이트맵</a></label>
+                                               
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                            </aside>
+
+                            <div class="right_bar">
+
+                                <!--research form 태그기입 -->
+                                <form action="" class="search_frm" name="search_frm2">
+                                    <h3>이 페이지에서 제공하는 정보에 대하여 만족하십니까?</h3>
+                                    <div class="radio_box">
+                                        <input type="radio" name="research2" class="research_ra" checked>
+                                        <label for="research21">매우만족</label>
+                                        <input type="radio" name="research2" class="research_ra">
+                                        <label for="research22">만족</label>
+                                        <input type="radio" name="research2" class="research_ra">
+                                        <label for="research23">보통</label>
+                                        <input type="radio" name="research2" class="research_ra">
+                                        <label for="research24">불만족</label>
+                                        <input type="radio" name="research2" class="research_ra">
+                                        <label for="research25">매우 불만족</label>
+                                    </div>
+                                    <div class="research_txt_box">
+
+                                        <input type="text" value="입력" class="input_btn1">
+
+                                        <input type="text" class="input_btn2" placeholder="여러분의 소중한 의견을 입력해주세요.">
+
+
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="ft">
+            <div class="ft_wrap1">
+                <nav class="fnb">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <ul class="popup">
+                                <li>
+                                    <a href="index.html">홈으로</a>
+                                </li>
+                                <li>
+                                    <a href="">익산시청</a>
+                                </li>
+                                <li>
+                                    <a href="">시청블로그</a>
+                                </li>
+                                <li>
+                                    <a href="">시청페이스북</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="ft_wrap2">
+                <ul class="ft_banner">
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner1.jpg" alt="이미지1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner2.jpg" alt="이미지2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner3.jpg" alt="이미지3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner4.jpg" alt="이미지4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner5.jpg" alt="이미지5">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner6.jpg" alt="이미지6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner7.jpg" alt="이미지7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./data/footer/banner8.jpg" alt="이미지8">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft_wrap2">
+                <nav class="ft_link">
+                    <ul>
+                        <li><a href="">개인처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">저작권정책</a></li>
+                        <li><a href="">홈페이지의견접수</a></li>
+                        <li><a href="">익산문화관광재단</a></li>
+                    </ul>
+                </nav>
+                <div class="fnb_txt_box">
+                    <p>54622 전라북도 익산시 인북로32길 1 (남중동) l 대표전화 : 1577-0072</p>
+                    <p class="copyright">Copyright(c) 2015 IKSAN CITY. All rights Reserved.</p>
+                    <a href="" class="wamark"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <div class="quick">
+            <ul>
+                <li class="item1">
+                    <a href="">
+                        <span class="qtxt">교통</span>
+                        <span class="qico"></span>
+                    </a>
+                </li>
+                <li class="item2">
+                    <a href="">
+                        <span class="qtxt">축제</span>
+                        <span class="qico"></span>
+                    </a>
+                </li>
+                <li class="item3">
+                    <a href="">
+                        <span class="qtxt">먹거리</span>
+                        <span class="qico"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

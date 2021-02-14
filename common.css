@@ -7,36 +7,36 @@ a { text-decoration: none;}
 input,button,img {border:0; outline: 0; background: none;}
 
 .container {width: 100%; clear:both; }
-.hd { clear:both; width:100%; height: 45px;  background-image: url("data/menu/tnb_bg.png"); background-repeat: repeat;  }
+.hd { clear:both; width:100%; height: 60px;  background-image: url("data/menu/tnb_bg.png"); background-repeat: repeat;  }
 .hd_wrap { clear:both; width: 1320px; height: 50px; margin:0 auto; }
 
 /*nav.tnb부분*/
-.tnb { width:100%; height: 45px; position:relative; overflow: hidden;}
+.tnb { width:100%; height: 50px; position:relative; }
 
 
-.t_left {float: left;}
-.t_left li { float: left; padding:10px 20px; }
-.t_left li a {color: white; font-size:15px; font-weight:800;}
+.t_left { float: left; height:60px; }
+.t_left li { float: left; height:60px;  padding:0 20px; }
+.t_left li a { color: white; font-size:15px; font-weight:800; height: 60px; line-height: 60px;}
 
-.t_right{ float: right; }
-.t_right li { float:left; padding:10px 20px; color:#fff; }
+.t_right{ float: right; height:60px; margin-top: 15px; }
+.t_right li { float:left; padding:0 20px; color:#fff; height: 60px; line-height: 60px;}
 
-/*랭박스 다시 애니메이션 다시확인*/
 
 /*li.cur_lang 부분*/
-.cur_lang { width:120px; }
-.cur_lang span { display: block; color: white; font-size: 15px; font-weight:600; text-transform: uppercase; border:1px solid #fff;  box-sizing:border-box; padding-left: 5px; }
+.cur_lang { width:120px; height:60px; position:relative; }
+.cur_lang span { display: block; width: 120px; height: 30px; line-height: 30px; color: white; font-size: 15px; font-weight:600; text-transform: uppercase;   box-sizing:border-box; padding-left: 10px; border:1px solid #fff;  }
+
 .t_right .cur_lang span:after {content:"▼"; display:block; float:right; padding-right:10px;}
 
-.lang_box {display: none; border:1px solid #fff; box-sizing:content-box; background-color:#fff;  height: 51px; transition:0.7s;}
+.lang_box { display: none; border:1px solid #fff; box-sizing:content-box; background-color:#fff;  width: 120px; height: 100px; transition:0.7s; position: absolute; left: 19px; top: 30px; z-index:99; border-left: 1px solid #eee;  border-right: 1px solid #eee;  border-bottom: 1px solid #eee; box-sizing: border-box; }
 
-/*on부분추가(여기 다시:화살표가 안변함)*/
-.lang_box.on {height:80px; display: block;}
-.lang_box:last-child {padding-bottom:5px;}
+.lang_box a { display: block; ; width: 120px; height:25px; color:#000; font-size:15px; font-weight: 700; margin: 0 25px; text-transform: uppercase; }
+.lang_box a:first-child { margin-top: -20px; }
+
+.lang_box.on { height:100px; display: block; }
 .lang_box.on .cur_lang span:after{ content:"▲";}
 
- 
-.t_right .lang_box a{display: block; ; color:#000; font-size:13px; font-weight: 700;  text-transform: uppercase; padding:2px 15px;}
+
 
 .t_right .is a { display:block; width:20px; height:19px; background-image: url("data/icon/list_icon(20x19).png"); background-position: center center;  background-repeat: no-repeat;} 
 
@@ -44,8 +44,7 @@ input,button,img {border:0; outline: 0; background: none;}
 
 /*검색 input 버튼 부분;검색영역 화면전체, 높이 임의*/
 #find_open_btn {display: none;}
-.find_window { clear:both; width:100%; height:80px; background-color:#e5007f; display:none; position:fixed; top:40px; left:0; overflow: hidden; z-index: 41;
-}
+.find_window { clear:both; width:100%; height:80px; background-color:#e5007f; display:none; position:fixed; top:40px; left:0; overflow: hidden; z-index: 41;}
 
 .find_window .form_box {width:500px; height:100px; margin:0 auto; }
 
@@ -101,16 +100,20 @@ input,button,img {border:0; outline: 0; background: none;}
 
 /*ftooer 부분*/
 
-.ft { width:100%; height:auto; clear:both; overflow: hidden; }
-.ft_wrap1, .ft_wrap2 {width:100%; height: auto; clear:both; }
+.ft { width:1320px; margin: 0 auto; height:auto; clear:both; overflow: hidden; }
+.ft_wrap1 {width:1320px; height: auto; clear:both; }
 .fnb{ width:100%; height: 50px; background-image:url(data/menu/tnb_bg.png); overflow: hidden; }
-.fnb ul { width: 1320px; margin:0 auto;}
+.fnb ul { width: 1320px; margin: 0 auto;}
 .fnb li { float:left; height: 45px; }
-.fnb li a {display: block; width:300px; height:45px; line-height: 45px;  text-align: center; color:#fff; font-size: 16px; font-weight: 600;}
+.fnb li a {display: block; width:300px; height:45px; line-height: 45px;  text-align: center; color:#fff; font-size: 16px; font-weight: 600; }
 
 /*배너광장*/
-.ft_banner { width: 1320px; height: 65px; margin:0 auto; overflow: hidden; }
-.ft_banner li { float: left; padding: 5px 10px;}
+.ft_wrap2 { width:1300px; height: auto; clear:both; }
+.ft_banner { width: 1320px; height: 60px; overflow: hidden; border-bottom: 1px solid #eee; }
+.ft_banner li { width: 198px; height: 58px; float: left; margin-right: 5px;}
+.ft_banner li a { display:block; width: 198px; height: 58px; padding: 5px 5px; float: left; }
+
+
 
 /*footer 링크*/
 .ft_link { width: 1320px; height: 65px; margin:0 auto; }

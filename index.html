@@ -5,6 +5,7 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0,maximum-scale=1"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--상위 한줄 익스플로러 10이하버전 셋-->
     <meta name="title" content="익산 문화관광홈페이지">
     <meta name="keywords" content="익산 놀거리, 익산 볼거리, 국화축제, 서동축제, 보석축제, 10월행사, 익산 맛집">
     <meta name="description" content="익산문화관광 홈페이지입니다.">
@@ -12,8 +13,9 @@
     <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
     <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
     <title>익산문화관광</title>
-   <!--폰트 .css-->
+   <!--1.폰트셋.css 2.reset/clear.css/nomalize.css-->
     <link rel="stylesheet" href="css/clear.css">
+
     <!--공통, 메인 css링크-->
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="main.css">
@@ -21,24 +23,36 @@
     <script async src="js/google_analyics.js"></script>
    <!--제이쿼리연결-->
    <script src="https://code.jquery.com/jquery-latest.js"></script>
-   
-   <style>
-    /*폰트스타일지정해주기*/
-    </style>
-    <!--[if lt IE 9]
-    <script src="js/HTML5shiv.js"></script>
-    ![endif]-->
-    <!--[if lte IE 9]
+    <script src="./js/slider.js"></script>
+ 
+  <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+  <!--[if lte IE 9]
     <script src="js/respond.js"></script>
-    ![endif]-->
-    
-   
-    
+    <![endif]-->
+    <!--구글 애널리스틱 코드 복붙 : 얼마나 들어오는지 보려고-->
+    <script async src="googleanalytics.js"></script>
+  
+      
     <script>
-    //비주얼 배너 부분 연결    
+    $(document).ready(function(){
+        //언어 설정
+        $(".cur_lang").click(function(){
+           $(".lang_box").toggleClass("on");
+        });
+        //스크롤시 검색창 사라짐
+        $(window).scroll(function(){
+           var par = parseInt($(this).scrollTop());
+           var chk = $("#find_open_btn").prop("checked");    
+            if(par>=200){
+                $("#find_open_btn").removeProp("checked");
+            }
+        });    
+    });    
     
     </script>
-    
 </head>
 
 <body>
@@ -63,12 +77,12 @@
                     <!--:자바 on 클래스 사용 language 클릭시 cur_lang 박스보이게-->
                     <ul class="t_right">
                         <li class="cur_lang">
-                            <span>language</span>
+                        <span>language</span>
                             <div class="lang_box">
-                                <a href="">ko</a>
-                                <a href="">en</a>
-                                <a href="">ch</a>
-                                <a href="">jp</a>  
+                                <a href="">korean</a>
+                                <a href="">english</a>
+                                <a href="">chinese</a>
+                                <a href="">jpanise</a>  
                             </div>
                            
                         </li>
@@ -794,7 +808,17 @@
                             <img src="./data/footer/banner8.jpg" alt="이미지8">
                         </a>
                     </li>
-                </ul>
+                    </ul>
+
+                    <script>
+                        $(document).ready(function() {
+                            $(".ft_banner").sliding({
+                                spd: 500,
+                                intv: 4500,
+                                chd: "li"
+                            });
+                        });
+                    </script>
             </div>
             <div class="ft_wrap2">
                 <nav class="ft_link">
