@@ -1,0 +1,3 @@
+일반 인증키(UTF-8):    jdSPIcobIGgiqBw4jPS5w%2BcArufStVYHX1q%2BMEXjYzL2lZnU8Zn%2FszrH6ILnpb12km4ZfBUrye%2BHLSyjBIV4Vw%3D%3D
+
+End Point :   http://apis.data.go.kr/1360000/MidFcstInfoService
