@@ -34,7 +34,7 @@ font-size: 20px; }
 /*device 리스트 하기*/
 .device_lst { float: right; }
 .device_lst li { float: left; }
-.device_lst li a {display: block; width: 100px; }
+.device_lst li a {display: block; width: 100px;  color:#999;}
 
 
 /*aside_bar 부분*/
