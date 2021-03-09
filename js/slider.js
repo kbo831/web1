@@ -9,6 +9,7 @@
         var numfr = opt.numfr;
         var numbox = opt.numbox;
         var wd = tar.find(chd).width();
+        var cnt = tar.find(chd).length;
         function nextAni() {
             tar.not(":animated").animate({"margin-left":"-"+wd+"px"}, opt1, function(){
                 tar.find(chd).eq(0).appendTo(tar);
@@ -22,7 +23,7 @@
         }
         
         function prevAni() {
-            tar.find(chd).eq(4).prependTo(tar);
+            tar.find(chd).eq(cnt-1).prependTo(tar);
             tar.css("margin-left", "-"+wd+"px");
             tar.not(":animated").animate({"margin-left":"0px"}, opt1);  
             $(numbox).eq(0).prependTo($(numfr));
