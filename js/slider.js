@@ -10,6 +10,7 @@
         var numbox = opt.numbox;
         var wd = tar.find(chd).width();
         var cnt = tar.find(chd).length;
+        console.log(cnt);
         function nextAni() {
             tar.not(":animated").animate({"margin-left":"-"+wd+"px"}, opt1, function(){
                 tar.find(chd).eq(0).appendTo(tar);
