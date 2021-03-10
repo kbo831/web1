@@ -1,2 +1,52 @@
 @charset "utf-8";
+.log_wrap { width: 1040px; float:left ; border-top: 2px solid #e3e3e3; margin: 0 15px;}
+section.log1,section.log3 { width:90%; clear:both; }
+section.log1 { float: left;  height: 300px; padding:30px 0; box-sizing: border-box; margin: 30px 55px; border-radius: 5px; }
 
+section.log1 .tit { margin-left: 40px; }
+.left_log { width:40%;  margin-top: 10px; margin-left: 40px;  }
+
+.left_log .img { display: block; width: 110px; height: 110px; background-color:#cc99cc; border-radius: 30px; margin-right: 20px; margin-top: 10px; ; float: left; background-image: url("../data/sub/login/log.png"); background-repeat: no-repeat; background-position: center center }
+.left_log .ip_box { width: calc(100% - 130px ); float: left; }
+.left_log  input { border:1px solid gray; width:90%; height: 40px; margin-top: 5px; }
+.left_log .login,.left_log .pw { padding-left: 10px; box-sizing: border-box; margin:5px 0; }
+.left_log .login { margin-top:20px; }
+.left_log .log_btn { background-color:#840880 ; color:#fff; font-weight: 700;  width: 90%; margin-top: 20px; font-size: 15px; text-align: center; cursor:pointer; }
+.right_log { float:right;  width: 45%; border-left: 2px solid #ddd; margin-right: 50px }
+.right_log a { display: block; width: 60%; height: 40px; line-height: 40px; padding-left:30px;box-sizing: border-box;  color: #fff; margin:10px auto}
+.right_log a.join_btn1 { background-color:#a67fa6;  margin-top: 20px; } 
+.right_log a.join_btn2 { background-color:#630460 ;}
+
+
+section.log2 { clear:both; width: 80%; margin: 0 auto; height: 200px;   border-top: 1px solid #eee }
+section.log2 h2 { padding-top: 50px; }
+section.log2 h2, section.log2 p.log_com { width: 100%; line-height: 2.0; }
+section.log2 p.log_com { padding: 10px 0;}
+section.log2 .sns_box { width: 100%; clear:both; }
+section.log2 .sns_box li { float:left;  width: 25%; margin-right: 65px }
+section.log2 .sns_box li a { display: block; width: 100%; line-height: 40px; height: 40px; color: #fff; }
+section.log2 .sns_box li a span { float:left; display: block; width: 40px; height: 100%;  background-position: center center; background-size: cover; }
+section.log2 .sns_box li span.img01 { margin-left: 10px}
+section.log2 .sns_box li span.com { width: calc(100% - 70px);  letter-spacing: 5px; box-sizing: border-box; font-size: 20px ; text-align: center; font-weight: 700; }
+section.log2 .sns_box li.item1 a { background-color: #ffeb33; color:#392324; }
+section.log2 .sns_box li.item2 a { background-color: #00b236 ; }
+section.log2 .sns_box li.item3 a {background-color: #3e5c9a;}
+
+
+section.log2 .sns_box li.item1 span.img01 {background-image: url("../data/icon/kakao.png"); }
+section.log2 .sns_box li.item2 span.img01 {background-image: url("../data/icon/naver.png"); }
+section.log2 .sns_box li.item3 span.img01{background-image: url("../data/icon/face.png"); }
+
+
+section.log3 { margin-top: 60px;   }
+section.log3 .log3_wrap { width: 100%;  margin: 0 auto;    }
+section.log3 h2.tit { width: 90%; line-height: 2.0; padding-bottom: 40px; padding-top: 40px; margin-left: 100px ; border-top: 1px solid #eee ;  }
+section.log3 ul { width: 50%;float:left; }
+section.log3 ul li { width: 100%; min-height: 40px; }
+section.log3 li.item1 { font-size: 18px;  text-align: center; }
+section.log3 li.item2 { height: 120px; line-height: 120px;  }
+section.log3 li.item2 img { display: block; width: 100px; height: 100px; background-color:#cc99cc; border-radius: 20px; margin: 10px auto; }
+section.log3 li.item3 {  text-align: center;  }
+section.log3 li.item3 a { display: block; width: 50%; height:40px; line-height: 40px;  background-color: #840880 ; margin: 0 auto; color: #fff;  font-size: 18px; border-radius: 3px; }
+section.log3 li.item4 { width: 100%;  box-sizing: border-box; padding: 30px ; text-align: center;  }
+    

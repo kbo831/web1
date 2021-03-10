@@ -24,12 +24,12 @@
 
 .vs .ban_box li.item4 span.com05 { display: block; width: 400px; height: 100px;  position: absolute; top:53%; left: 55%; font-size: 60px; z-index: 200; color:#000; ; font-family: 'East Sea Dokdo', cursive; }
 
-.vs .ban_box li.item1 a {background-image:url("../data/vs/01_1.png") ;}
+.vs .ban_box li.item1 a {background-image:url("../data/vs/vs1.jpg") ;}
 .vs .ban_box li.item2 a {background-image:url("../data/vs/01.png") ; }
 .vs .ban_box li.item3 a { background-image:url("../data/vs/02.png"); }
 .vs .ban_box li.item4 a {background-image:url("../data/vs/03_1.png");  }
 
-.vs .btn_box button { display:block; width:15px; height:15px; border:1px solid #fff; border-radius: 
+.vs .btn_box button { display:block; width:15px; height:15px; border:2px solid #c6c6c6; border-radius: 
 8px; background-color:transparent;  position:absolute; bottom:100px; cursor:pointer; }
 .vs .btn_box li.on button {background-color:#fa4ba4; border:2px solid #fff; }
 .vs .btn_box li.item1 button { left:calc(50% - 60px); }

@@ -16,7 +16,7 @@ font-size: 20px; }
 
 .breadcrumb_box { height: 130px; float:left; overflow: hidden; }
 
-.page_header .page_tit2 { background-color: #fecbe5; text-align: center; line-height: 130px; width: 250px; height:130px; font-size: 25px; float:left;} 
+.page_header .page_tit2 { background-color: #cc99cc; text-align: center; line-height: 130px; width: 250px; height:130px; font-size: 25px; float:left; color:#fff;} 
 
 /*브레드 크럼브*/
 .breadcrumb_box { width: 1070px; background-color: #fff; height: 130px; }
@@ -29,7 +29,7 @@ font-size: 20px; }
 .bread_box .bread_lst li:first-child a {padding-left: 45px;}
 .bread_box .bread_lst li:last-child a:after {display: none;}
 
-.bread_box .bread_lst li a:hover,.bread_box .bread_lst li span:hover { color:#fa4ba4; }
+.bread_box .bread_lst li a:hover,.bread_box .bread_lst li span:hover { color:#840880; }
 
 /*device 리스트 하기*/
 .device_lst { float: right; }
@@ -44,7 +44,7 @@ font-size: 20px; }
 .page_content aside.left_bar { width: 250px; height:100%; float:left; }
 .ra_ul li { padding:1px 0; }
 .ra_ul .item01 .sub {border:1px solid #eee;  border-top: 0; box-sizing: border-box; background-color: #fce3fc;}
-.ra_ul .item02 .sub {border:1px solid #eee;  border-top: 0; box-sizing: border-box; background-color: #ffccff;}
+.ra_ul .item02 .sub {border:1px solid #eee;  border-top: 0; box-sizing: border-box; background-color: #fce3fc;}
 .ra_ul .item03 .sub {border:1px solid #eee;  border-top: 0; box-sizing: border-box; background-color: #fce3fc;}
 .ra_ul .item04 .sub {border:1px solid #eee;  border-top: 0; box-sizing: border-box; background-color: #fce3fc;}
 .ra_ul .item05 .sub {border:1px solid #eee;  border-top: 0; box-sizing: border-box; background-color: #fce3fc;}
@@ -53,13 +53,16 @@ font-size: 20px; }
 
 
 .ra_ul .sub  {padding:10px; display:none; }
-.ra_ul li label { display: block; width: 250px; height: 50px; line-height: 50px;  font-size: 20px; font-weight: 700; background-color: #fecbe5; box-sizing: border-box; border:2px solid #fecbe5; padding-left: 30px; color: #000;}
-.ra_ul li:hover label { background-color: #fd96ca; }
+.ra_ul li.item01 label {margin-top: 1px;}
+.ra_ul li label { display: block; width: 250px; height: 50px; line-height: 50px;  font-size: 18px; font-weight: 700; background-color: #fecbe5; box-sizing: border-box; border:2px solid transparent; padding-left: 30px; color: #000;}
+.ra_ul li:hover label { background-color: #cc99cc; }
 
 .ra_ul .sub  {padding:10px; display:none; }
-.ra_ul .subcate a,.ra_ul .subcate span {display:block; clear:both; font-size: 20px; font-weight: 700; line-height: 1.6;}
+
+.ra_ul .subcate a,.ra_ul .subcate span {display:block; clear:both; font-size: 15px; font-weight: 700; line-height: 1.6; }
+.ra_ul .subcate span { padding-left: 10px; }
 .ra_ul .subcate a { text-indent: 20px; color:#000; }
-.ra_ul .subcate a:hover { color:#fa4ba4; }  
+.ra_ul .subcate a:hover { color:#840880; }  
 .ra_ul .subcate a:before { content:" - " ;}
 
 #ra1:checked ~ .ra_ul .item01 .sub { display: block;}
