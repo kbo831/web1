@@ -158,8 +158,8 @@ text-align: center; position:absolute; top:0px;  left:0px;  color:#000; font-siz
 
 #page2 li .thum { width: 145px; height:145px; border-radius: 20px; background-position: center; background-repeat: no-repeat; margin: 5px auto; text-indent: -999px;}
 
-#page2 .item01 .thum {background-image: url(../data/page02/food_thum04.JPG); border:4px solid #fff; box-sizing: border-box;}
-#page2 .item02 .thum {background-image: url(../data/page02/food_thum02.JPG); border:4px solid #fff; box-sizing: border-box;}
+#page2 .item01 .thum {background-image: url(../data/page02/food_thum04.jpg); border:4px solid #fff; box-sizing: border-box;}
+#page2 .item02 .thum {background-image: url(../data/page02/food_thum02.jpg); border:4px solid #fff; box-sizing: border-box;}
 #page2 .item03 .thum {background-image: url(../data/page02/food_thum03.jpg); border:4px solid #fff; box-sizing: border-box;}
 #page2 .item04 .thum {background-image: url(../data/page02/food_thum07.jpg); border:4px solid #fff; box-sizing: border-box;}
 
