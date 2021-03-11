@@ -13,13 +13,13 @@
     <meta http-equiv="refresh" content="180">
     <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
     <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
-    <title>익산문화관광</title>
+    <title>익산문화관광포트폴리오</title>
     <!--1.폰트셋.css 2.reset/clear.css/nomalize.css-->
-    <link rel="stylesheet" href="css/clear.css">
+    <link rel="stylesheet" href="./css/clear.css">
     <!--공통, 메인 css링크-->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/subcommon.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/trf03.css">
     <!--구글애널리틱스 소스코드-->
     <script async src="js/google_analyics.js"></script>
     <!--제이쿼리연결-->
@@ -35,7 +35,20 @@
     <![endif]-->
     <!--구글 애널리스틱 코드 복붙 : 얼마나 들어오는지 보려고-->
     <script async src="googleanalytics.js"></script>
-
+    <!--다음지도-->
+    <link href="http://apis.map.daum.net/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=720">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daum 지도 API">
+    <link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
+    <style>
+        body {
+            background: white;
+        }
+    </style>
+    <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
+    <script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -74,7 +87,6 @@
                             <input type="submit" id="find_btn" class="find_btn">
                         </form>
                     </div>
-                    <!--:자바 on 클래스 사용 language 클릭시 cur_lang 박스보이게-->
                     <ul class="t_right">
                         <li class="cur_lang">
                             <span>language</span>
@@ -84,7 +96,6 @@
                                 <a href="">chinese</a>
                                 <a href="">jpanise</a>
                             </div>
-
                         </li>
                         <li class="is">
                             <a href=""></a>
@@ -101,7 +112,7 @@
                 <nav class="gnb">
                     <ul class="gnb_wrap">
                         <li class="mn">
-                           <a href="tr01">교통</a>
+                            <a href="tr01">교통</a>
                             <div class="sub">
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"><span>시외버스</span></li>
@@ -152,21 +163,21 @@
                             <div class="sub">
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"><span>먹자골목1</span></li>
-                                    <li class="sub_br"><a href="st01.html">창인동</a></li>
+                                    <li class="sub_br"><a href="st.html">창인동</a></li>
                                 </ul>
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit">
                                         <span>먹자골목2</span>
                                     </li>
-                                    <li class="sub_br"><a href="st01#pg1">모현동</a></li>
+                                    <li class="sub_br"><a href="st.html#pg1">모현동</a></li>
                                 </ul>
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"><span>먹자골목3</span></li>
-                                    <li class="sub_br"><a href="st01#pg2">영등동</a></li>
+                                    <li class="sub_br"><a href="st.html#pg2">영등동</a></li>
                                 </ul>
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"><span>먹자골목4</span></li>
-                                    <li class="sub_br"><a href="st01#pg3">어양동</a></li>
+                                    <li class="sub_br"><a href="st.html#pg3">어양동</a></li>
                                 </ul>
 
                             </div>
@@ -181,17 +192,17 @@
                                         <span>산책로1 </span>
                                     </li>
 
-                                    <li class="sub_br"><a href="st02.html">모현동</a></li>
+                                    <li class="sub_br"><a href="st2.html">모현동</a></li>
                                 </ul>
 
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"><span>산책로2 </span></li>
 
-                                    <li class="sub_br"><a href="st02.html2#pg1">영등동</a></li>
+                                    <li class="sub_br"><a href="st2.html2#pg1">영등동</a></li>
                                 </ul>
                                 <ul class="sub_cate">
                                     <li class="sub_cate_tit"> <span>산책로3 </span></li>
-                                    <li class="sub_br"><a href="st02.html#pg2">어양동</a></li>
+                                    <li class="sub_br"><a href="st2.html#pg2">어양동</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -251,7 +262,7 @@
             </div>
         </header>
 
-        <div class="content">
+        <main class="content">
             <div class="sub_mian">
                 <figure class="vs">
                     <h2 class="page_tit1"> Amazing 익산 </h2>
@@ -259,67 +270,156 @@
                 </figure>
                 <section class="page_container">
                     <div class="page_header">
-                        <h2 class="page_tit2">이용안내</h2>
+                        <h2 class="page_tit2">교통</h2>
+                        <!--너비 1070px-->
                         <div class="breadcrumb_box">
-                            <h2 class="b_txt2">로그인</h2>
+                            <h2 class="b_txt2">택시</h2>
                             <div class="bread_box">
                                 <ul class="bread_lst">
                                     <li>
                                         <a href="index.html">Home</a>
                                     </li>
                                     <li>
-                                        <a href="login.html">로그인</a>
+                                        <a href="">교통</a>
+                                    </li>
+                                    <li>
+                                        <span>시내교통</span>
+                                    </li>
+                                    <li>
+                                        <a href="">택시</a>
                                     </li>
                                 </ul>
+                                <ul class="device_lst">
+                                    <li><a href="">공유</a></li>
+                                    <li><a href="">인쇄</a></li>
+                                    <li><a href="">정보</a></li>
+                                </ul>
                             </div>
+
                         </div>
+
                         <div class="page_content">
                             <aside class="left_bar">
                                 <nav class="lnb">
                                     <div class="lnb_item">
-                                        <input type="radio" name="radio" class="ra" id="ra1" checked>
+                                        <input type="radio" name="radio" class="ra" id="ra1">
                                         <input type="radio" name="radio" class="ra" id="ra2">
                                         <input type="radio" name="radio" class="ra" id="ra3">
                                         <input type="radio" name="radio" class="ra" id="ra4">
+                                        <input type="radio" name="radio" class="ra" id="ra5">
+                                        <input type="radio" name="radio" class="ra" id="ra6">
                                         <ul class="ra_ul">
                                             <li class="item01">
-                                                <label for="ra1">회원가입</label>
+                                                <label for="ra1">교통</label>
                                                 <ul class="sub">
                                                     <li class="subcate">
-                                                        <a href="join.html">회원가입</a>
+                                                        <span>시외버스</span>
+                                                        <a href="">시외버스터미널</a>
                                                     </li>
                                                     <li class="subcate">
-                                                        <a href="">회원탈퇴</a>
+                                                        <span>고속버스</span>
+                                                        <a href="">고속버스터미널</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>기차</span>
+                                                        <a href="">익산역</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>시내교통</span>
+                                                        <a href="">택시</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="item02">
-                                                <label for="ra2"> 정보 변경</label>
-
+                                                <label for="ra2">축제</label>
                                                 <ul class="sub">
                                                     <li class="subcate">
-
-                                                        <a href="">개인정보 변경</a>
+                                                        <span>축제1</span>
+                                                        <a href="">익산서동축제</a>
                                                     </li>
                                                     <li class="subcate">
-
-                                                        <a href="">비밀번호 변경</a>
+                                                        <span>축제2</span>
+                                                        <a href="">익산국화축제</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>축제3</span>
+                                                        <a href="">익산보석대축제</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="item03">
-                                                <label for="ra3">분실 및 신고</label>
+                                                <label for="ra3">먹거리</label>
                                                 <ul class="sub">
                                                     <li class="subcate">
-
-                                                        <a href="find.html">아이디 찾기</a>
+                                                        <span>먹자골목1</span>
+                                                        <a href="">창인동</a>
                                                     </li>
                                                     <li class="subcate">
-
-                                                        <a href="find.html">비밀번호 찾기</a>
+                                                        <span>먹자골목2</span>
+                                                        <a href="">모현동</a>
                                                     </li>
                                                     <li class="subcate">
-                                                        <a href="">신고센터</a>
+                                                        <span>먹자골목3</span>
+                                                        <a href="">영등동</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>먹자골목4</span>
+                                                        <a href="">어양동</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item04">
+                                                <label for="ra4">산책로</label>
+                                                <ul class="sub">
+                                                    <li class="subcate">
+                                                        <span>산책로1</span>
+                                                        <a href="">모현동</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>산책로2</span>
+                                                        <a href="">영등동</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>산책로3</span>
+                                                        <a href="">어양동</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item05">
+                                                <label for="ra5">역사&amp;문화</label>
+                                                <ul class="sub">
+                                                    <li class="subcate">
+                                                        <span>백제문화</span>
+                                                        <a href="">백제역사지구</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>유적이야기</span>
+                                                        <a href="">서동과 선화이야기</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>문화유산</span>
+                                                        <a href="">국가지정문화재</a>
+                                                        <a href="">익산시향토문화제</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item06">
+                                                <label for="ra6">여행가이드</label>
+                                                <ul class="sub">
+                                                    <li class="subcate">
+                                                        <a href="">공지사항</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>관광안내</span>
+                                                        <a href="">관광안내소</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>관광영상</span>
+                                                        <a href="">홍보영상</a>
+                                                    </li>
+                                                    <li class="subcate">
+                                                        <span>여행후기</span>
+                                                        <a href="">여행후기</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -327,90 +427,78 @@
                                     </div>
                                 </nav>
                             </aside>
-                            <div class="log_wrap clrfx">
-                                <section class="log1 clrfx">
-                                    <h2 class="tit">회원로그인</h2>
-                                    <div class="left_log clrfx">
-                                        <span class="img"></span>
-                                        <div class="ip_box">
-                                            <input type="text" class="login" id="login1" placeholder="아이디를 입력하세요" required autofocus r>
-                                            <input type="text" class="pw" id="pw1" placeholder="비밀번호를 입력하세요" required>
-                                            <input type="submit" value="로그인" class="log_btn">
+                            <div class="tra clrfx">
+                                <ul class="lst clrfx">
+                                    <li class="item1 left">
+                                        <h3 class="tit">시내 콜택시</h3>
+                                        <table class="tb">
+                                            <thead>
+                                                <tr>
+                                                    <th class="cel1">회사명</th>
+                                                    <th class="cel2">전화번호</th>
+                                            <tbody>
+                                                <tr class="tr1">
+                                                    <td class="cel1">익산보석콜택시</td>
+                                                    <td class="cel2"> 063-857-1000 </td>
+                                                </tr>
+                                                <tr class="tr2">
+                                                    <td class="cel1">익산원콜택시</td>
+                                                    <td class="cel2"> 063-858-5424 </td>
+                                                </tr>
+                                                <tr class="tr3">
+                                                    <td class="cel1">익산콜택시</td>
+                                                    <td class="cel2"> 063-857-1000 </td>
+                                                </tr>
+                                                <tr class="tr4">
+                                                    <td class="cel1">무궁화콜택시</td>
+                                                    <td class="cel2"> 063-851-6612 </td>
+                                                </tr>
+                                                <tr class="tr5">
+                                                    <td class="cel1">서동콜택시</td>
+                                                    <td class="cel2"> 063-855-1000 </td>
+                                                </tr>
+                                            </tbody>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </li>
+                                    <li class="item2"><img src="./data/traffic/taxi02.png" alt=""></li>
+                                </ul>
+                                <!--너비 1033px-->
+                                <div class="research_box">
+                                    <p class="research_p1">
+                                        <span class="re1"><strong>정보관리 </strong></span>
+                                        <span class="re2"><strong>담당부서:</strong> 문화관광산업과</span>
+                                        <span class="re3"><strong> 전화번호:</strong> 063-859-5778</span>
+                                        <span class="re4"><strong>최종수정일:</strong> 2020-01-16</span>
+                                    </p>
+                                    <form action="" class="search_frm" name="search_frm2">
+                                        <h3>이 페이지에서 제공하는 정보에 대하여 만족하십니까?</h3>
+                                        <div class="radio_box">
+                                            <input type="radio" name="research2" class="research_ra" checked>
+                                            <label for="research21">매우만족</label>
+                                            <input type="radio" name="research2" class="research_ra">
+                                            <label for="research22">만족</label>
+                                            <input type="radio" name="research2" class="research_ra">
+                                            <label for="research23">보통</label>
+                                            <input type="radio" name="research2" class="research_ra">
+                                            <label for="research24">불만족</label>
+                                            <input type="radio" name="research2" class="research_ra">
+                                            <label for="research25">매우 불만족</label>
                                         </div>
-
-                                    </div>
-                                    <div class="right_log clrfx ">
-                                        <a href="join.html" class="join_btn1 clrfx">
-                                            회원가입
-                                        </a>
-                                        <a href="find.html" class="join_btn2 clrfx">
-                                            아이디/비밀번호 찾기
-                                        </a>
-                                    </div>
-                                </section>
-                                <section class="log2 clrfx">
-                                    <h2>SNS 로그인</h2>
-                                    <p class="log_com">로그인 방식을 선택해주세요</p>
-                                    <ul class="sns_box clrfx">
-                                        <li class="item1">
-                                            <a href="" class="ka">
-                                                <span class="img01"></span>
-                                                <span class="com">카카오톡</span>
-                                            </a>
-                                        </li>
-                                        <li class="item2">
-                                            <a href="" class="na">
-                                                <span class="img01"></span>
-                                                <span class="com">네이버</span>
-                                            </a>
-                                        </li>
-                                        <li class="item3">
-                                            <a href="" class="fa">
-                                                <span class="img01"></span>
-                                                <span class="com">페이스북</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </section>
-                                <section class="log3">
-                                    <h2 class="tit">비회원로그인</h2>
-                                    <div class="log3_wrap">
-                                        <ul>
-                                            <li class="item1">
-                                                I-PIN 실명인증
-                                            </li>
-                                            <li class="item2">
-                                                <img src="./data/sub/login/ipin.png" alt="아이핀인증">
-                                            </li>
-                                            <li class="item3">
-                                                <a href="" class="core">인증하기</a>
-                                            </li>
-                                            <li class="item4"> <span class="com">개인식별 번호를 발급받아 인터넷상에서<br> 본인확인을 받을 수 있는 서비스입니다.</span></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="item1">
-                                                휴대전화인증
-                                            </li>
-                                            <li class="item2">
-                                                <img src="./data/sub/login/phon.png" alt="휴대전화인증">
-                                            </li>
-                                            <li class="item3">
-                                                <a href="" class="core">인증하기</a>
-                                            </li>
-                                            <li class="item4">
-                                                <span class="all_com">홈페이지 개편이후 게시판 글쓰기 및 본인확인 시<br> 다음과 같이 본인인증 절차를 이용합니다.<br> 본인인증을 하시면 홈페이지를 자유롭게 이용할 수 있습니다. 개인정보는 개인정보보호법에 의거하여<br>개인정보를 보유, 운영하지 않습니다.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </section>
+                                        <div class="research_txt_box">
+                                            <input type="text" value="입력" class="input_btn1">
+                                            <input type="text" class="input_btn2" placeholder="여러분의 소중한 의견을 입력해주세요.">
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
-
             </div>
-        </div>
-
+        </main>
         <footer class="ft">
             <div class="ft_wrap1">
                 <nav class="fnb">
@@ -523,9 +611,6 @@
                 </li>
             </ul>
         </div>
-
-
-
     </div>
 
 </body>
