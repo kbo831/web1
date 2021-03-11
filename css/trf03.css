@@ -1,0 +1,18 @@
+@charset "utf-8";
+.tra { float:left; width: 1040px; height:  100vh; margin: 0 auto; }
+.tra .lst { width: 90%; clear:both; height: 500px;  margin: 50px auto; padding-left: 100px }
+.tra .lst li {  width: 50%; float:left; height: 200px; padding-top: 30px; }
+.tra .lst li.item1 { box-sizing: border-box; }
+.tra .lst li.item1 h3 { font-size: 30px; line-height: 2.0 }
+.tra .lst li.item1 p { font-size: 25px ; line-height: 3.0; padding-bottom: 20px; }
+
+
+.tb { width: 95%; display:table; border-collapse: collapse; margin-top: 20px }
+.tb tr { display: table-row; }
+.tb th,.tb td { display: table-cell; }
+.tb th { font-size: 19px; line-height: 3.0; }
+.tb tbody td { font-size: 20px;  line-height: 2.0; border-bottom: 1px solid #ddd; }
+.tb tbody .tr1 { border-top: 2px solid #000; }
+.tb th.cel1, .tb td.cel1 { padding-left: 10px; box-sizing: border-box;  }
+.tb th.cel2, .tb td.cel2 { padding-left: 30px; box-sizing: border-box;    }
+

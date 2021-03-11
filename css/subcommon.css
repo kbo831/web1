@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-.container { width: 100vw; height:100vh; clear:both;  }
-.content { width:100%;  margin:0 auto; clear:both; overflow: hidden; }
+.container { width: 100vw; height:auto; clear:both;  }
+.content { width:100%; height:auto; margin:0 auto; clear:both;  }
 .content:after { content:""; clear: both; display:block;}
 div.sub_mian { width:100%; overflow: hidden;}
 /*width 1920 height 430*/
@@ -19,7 +19,7 @@ font-size: 20px; }
 .page_header .page_tit2 { background-color:#cc99cc; text-align: center; line-height: 130px; width: 250px; height:130px; font-size: 25px; float:left; color:#fff;} 
 
 /*브레드 크럼브*/
-.breadcrumb_box { width: 1070px; background-color: #fff; height: 130px; }
+.breadcrumb_box { width: 1070px; background-color: #fff; height: 130px; border-bottom: 2px solid #000;  }
 .breadcrumb_box .b_txt2 { font-size: 30px; padding:20px 40px; color: #000;} 
 .bread_box .bread_lst li { float:left;  }
 .bread_box .bread_lst li a, .bread_box .bread_lst span { padding :0 5px; color:#999; }
