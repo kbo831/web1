@@ -19,7 +19,7 @@
     <!--공통, 메인 css링크-->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/subcommon.css">
-    <link rel="stylesheet" href="./css/trf02.css">
+    <link rel="stylesheet" href="./css/trf.css">
     <!--구글애널리틱스 소스코드-->
     <script async src="js/google_analyics.js"></script>
     <!--제이쿼리연결-->
@@ -291,7 +291,7 @@
                         <h2 class="page_tit2">교통</h2>
                         <!--너비 1070px-->
                         <div class="breadcrumb_box">
-                            <h2 class="b_txt2">익산역</h2>
+                            <h2 class="b_txt2">시외버스터미널</h2>
                             <div class="bread_box">
                                 <ul class="bread_lst">
                                     <li>
@@ -301,10 +301,10 @@
                                         <a href="">교통</a>
                                     </li>
                                     <li>
-                                        <span>기차</span>
+                                        <span>시외버스</span>
                                     </li>
                                     <li>
-                                        <a href="">익산역</a>
+                                        <a href="">시외버스터미널</a>
                                     </li>
                                 </ul>
                                 <ul class="device_lst">
@@ -332,19 +332,19 @@
                                                 <ul class="sub">
                                                     <li class="subcate">
                                                         <span>시외버스</span>
-                                                        <a href="">시외버스터미널</a>
+                                                        <a href="trf.html">시외버스터미널</a>
                                                     </li>
                                                     <li class="subcate">
                                                         <span>고속버스</span>
-                                                        <a href="">고속버스터미널</a>
+                                                        <a href="trf01.html">고속버스터미널</a>
                                                     </li>
                                                     <li class="subcate">
                                                         <span>기차</span>
-                                                        <a href="">익산역</a>
+                                                        <a href="trf02.html">익산역</a>
                                                     </li>
                                                     <li class="subcate">
                                                         <span>시내교통</span>
-                                                        <a href="">택시</a>
+                                                        <a href="trf03.html">택시</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -448,27 +448,33 @@
                             <div class="tra clrfx">
                                 <ul class="lst clrfx">
                                     <li class="item1 left">
-                                        <h3 class="tit">익산역</h3>
-                                        <p class="tel">tel: 1544-7788 </p>
-                                        <a href="" class="buy">기차표 예매</a>
+                                        <h3 class="tit">어양동 중앙체육공원</h3>
+                                        <p class="tel"> 주소: 전라북도 익산시 어양동 52 </p>
                                     </li>
-                                    <li class="item2 right">
-                                        <img src="./data/traffic/bus03.jpg" alt="익산역">
-                                    </li>
+                                    <!--슬라이드로 사진넣기-->
+                                    <div class="slide_pr">
+                                    <button class="prev_btn">이전</button>
+                                    <ul class="item2 right">
+                                        <li class="itme1"><img src="" alt="익산중앙체육공원1"></li>
+                                        <li class="itme2"><img src="" alt="익산중앙체육공원2"></li>
+                                        <li class="itme3"><img src="" alt="익산중앙체육공원3"></li>
+                                        <li class="itme4"><img src="" alt="익산중앙체육공원4"></li>
+                                    </ul>
+                                   <button class="next_btn">이전</button>
+                                    </div>
                                 </ul>
-
                                 <div class="map_box clrfx">
-                                    <h2>주소: 전북 익산시 창인동 2가 익산역 </h2>
-                                    <div id="map">지도 스타일 css로 뺌 </div>
+                                    <h2>위치</h2>
+                                    <div id="map">지도</div>
                                     <script>
                                         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                                             mapOption = {
-                                                center: new daum.maps.LatLng(35.94036965742176, 126.94627845367638), // 지도의 중심좌표
+                                                center: new daum.maps.LatLng(35.950331265091336, 126.98567791425862), // 지도의 중심좌표
                                                 level: 3 // 지도의 확대 레벨
                                             };
                                         var map = new daum.maps.Map(mapContainer, mapOption);
                                         // 마커가 표시될 위치입니다 
-                                        var markerPosition = new daum.maps.LatLng(35.94036965742176, 126.94627845367638);
+                                        var markerPosition = new daum.maps.LatLng(35.950331265091336, 126.98567791425862);
 
                                         // 마커를 생성합니다
                                         var marker = new daum.maps.Marker({
@@ -476,9 +482,9 @@
                                         });
                                         // 마커가 지도 위에 표시되도록 설정합니다
                                         marker.setMap(map);
-                                        var iwContent = '<div style="padding:5px;">익산고속버스터미널<br><a href="" style="color:blue" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                                        var iwContent = '<div style="padding:5px;">익산중앙체육공원<br><a href="" style="color:blue" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 
-                                            iwPosition = new daum.maps.LatLng(35.94036965742176, 126.94627845367638); //인포윈도우 표시 위치입니다
+                                            iwPosition = new daum.maps.LatLng(35.950331265091336, 126.98567791425862); //인포윈도우 표시 위치입니다
 
                                         // 인포윈도우를 생성합니다
                                         var infowindow = new daum.maps.InfoWindow({
@@ -529,6 +535,7 @@
                                         </div>
                                     </form>
                                 </div>
+
                             </div>
                         </div>
 
@@ -630,19 +637,19 @@
         <div class="quick">
             <ul>
                 <li class="item1">
-                    <a href="">
+                    <a href="trf.html">
                         <span class="qtxt">교통</span>
                         <span class="qico"></span>
                     </a>
                 </li>
                 <li class="item2">
-                    <a href="">
+                    <a href="ftv.html">
                         <span class="qtxt">축제</span>
                         <span class="qico"></span>
                     </a>
                 </li>
                 <li class="item3">
-                    <a href="">
+                    <a href="st01.html">
                         <span class="qtxt">먹거리</span>
                         <span class="qico"></span>
                     </a>
