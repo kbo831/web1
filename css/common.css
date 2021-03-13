@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 * { margin: 0; padding: 0;}
-body,html { width: 100%; overflow-x: hidden; font-family: 'Noto Sans KR', sans-serif;
+body,html { width: 100%; font-family: 'Noto Sans KR', sans-serif;
 }
-ul { list-style-type: none;}
-a { text-decoration: none;}
+ul { list-style-type: none; }
+a { text-decoration: none; }
 input,button,img {border:0; outline: 0; background: none;}
 
 .container { width: 100%; clear:both; }
@@ -102,8 +102,8 @@ input,button,img {border:0; outline: 0; background: none;}
 /*ftooer 부분*/
 
 .ft { width:1320px; margin: 0 auto; height:auto; clear:both; overflow: hidden; }
-.ft_wrap1 {width:1320px; height: auto; clear:both; }
-.fnb{ width:100%; height: 50px; background-image:url(data/menu/tnb_bg.png); overflow: hidden; }
+.ft_wrap1 { width:1320px; height: auto; clear:both; }
+.fnb{ width:100%; height: 50px; background-image:url(../data/logo/tnb_bg.png); overflow: hidden; }
 .fnb ul { width: 1320px; margin: 0 auto;}
 .fnb li { float:left; height: 45px; }
 .fnb li a {display: block; width:300px; height:45px; line-height: 45px;  text-align: center; color:#fff; font-size: 16px; font-weight: 600; }

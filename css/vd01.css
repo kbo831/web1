@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.container { width: 100vw; height:100vh; clear:both;  }
+.container { width: 100vw; clear:both;  }
 .content { width:100%;  margin:0 auto; clear:both; overflow: hidden; }
 .content:after { content:""; clear: both; display:block;}
 div.sub_mian { width:100%; overflow: hidden;}
