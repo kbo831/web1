@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.tra { float:left; width: 1040px; margin: 0 auto; padding-top: 50px; box-sizing: border-box}
+.tra .lst { width: 95%; clear:both;   margin: 30px 80px;}
+.tra .lst li {  width: 50%; float:left; }
+.tra .lst li.item1 { box-sizing: border-box; padding-left: 40px}
+.tra .lst li.item1 h3 { font-size: 20px; line-height: 2.0; }
+.tra .lst li.item1 p { font-size: 20px ; line-height: 2.0; padding-bottom: 20px; }
+
+/*공원설명부분*/
+.tra .lst li.item1 .info_lst { float: left; width: 454px; height: 25px; }
+.tra .lst li.item1 .info_lst li { height: 25px; float:left; }
+.tra .lst li.item1 .info_lst li.item01 { width: 53%; float:left; }
+.tra .lst li.item1 .info_lst li.item02 { width: 47%; float: right;  }
+
+.tra .lst li.item1 .info_lst span.ico {  font-size: 15px; display: block; line-height: 25px; height: 25px; }
+.tra .lst li.item1 .info_lst span.ico2 { font-size: 15px; display: block; line-height: 18px; line-height: 25px; height: 25px; }
+.tra .lst li.item1 .info_lst span.price {  font-size: 15px; display: block; line-height: 18px; text-align:left; position: relative; line-height: 25px; height: 25px;}
+
+.tra .lst li.item1 .info_lst:first-child li span.ico1:before { content:""; display: block; width: 18px; height: 25px; background-image: url("../data/park/joong/gun.png"); float: left; margin-right: 5px; }
+.tra .lst li.item1 .info_lst:last-child li span.ico2:before { content:""; display: block; width: 18px; height: 25px; background-image: url("../data/park/joong/cart.png"); float: left; margin-right: 5px;}
+
+.tra .lst li.item1 .info_lst span.ico:before { content:""; display: block; width: 18px; height: 18px; background-image: url("../data/park/joong/em.png"); float: left;  margin-right: 5px; background-position: center center; background-repeat: no-repeat;}
+.tra .lst li.item1 .info_lst span.price:before { content: ""; display: block; border: 1px dashed #ddd; z-index: 70; width: 50px; position: absolute;  ; top: 13px; left: -60px;background-position: center center; background-repeat: no-repeat; }
+
+
+
+.tra .lst li.slide {  width: 50%; height: 350px;  position: relative; overflow: hidden;  }
+.tra .lst li.slide .slide_box { width:328px; height: 246px; overflow: hidden; margin: 0 auto; border-radius: 5px; }
+.tra .lst li.slide .slide_box .sub_slide { width:1312px; }
+.tra .lst li.slide .slide_box .sub_slide li { width:328px; height:246px;  float: left;  } 
+.tra .lst li.slide .slide_box .sub_slide li.item2,.tra .lst li.slide .slide_box .sub_slide li.item3,.tra .lst li.slide .slide_box .sub_slide li.item4 {display: none; }
+.tra .lst li.slide .slide_box .sub_slide li.item4
+.tra .lst li.slide .slide_box .sub_slide li img { display: block; width: 328px; }
+.tra .lst .btn_cir { width: 100%; height: 20px; position:absolute ;  bottom: 15%; left: 38%; z-index: 70;}
+.tra .lst .btn_cir a { display: block ; width: 10px; height: 10px; border:2px solid #ddd; border-radius: 15px; float:left; margin-right: 20px; text-indent: -999999px; }
+.tra .lst .btn_cir a.on { background-color:  #840880; border-color:  #840880;} 
+
+#par01:target { display: block; }
+#par02:target { display: block; }
+#par03:target { display: block; }
+#par04:target { display: block; }
+
+
+
+
+
+.map_box { clear:both; width: 100%; height: 900px; padding-top:50px;  box-sizing: border-box; }
+.map_box h2 { margin-left: 120px; font-size: 25px; position: relative; }
+.map_box h2:before { content: ""; display: block; width: 30px; height: 4px; background-image: url(../data/traffic/tit_dc.png); position: absolute; top: -10px; left: 0;  }
+#map { margin: 0 auto; margin-top:60px; width:800px; height:400px; background:white;  border-radius: 30px; }
