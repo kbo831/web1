@@ -75,7 +75,7 @@ font-size: 20px; }
 .ra { display: none; }
 
 /*right_bar*/
-.page_content .right_bar { width:calc(100%- 253px); margin: 10px 8px; float:right; overflow: hidden; }
+.page_content .right_bar { width:calc(100%- 253px); margin: 10px 8px; float:right; }
 
 .right_bar .sub_img { width:100%; height: 130px;  background-image: url("../data/vd01/vd01_vs3_flow.jpg");  background-position: center center; background-repeat: no-repeat; margin: 0 auto; }
 
