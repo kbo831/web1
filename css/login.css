@@ -7,7 +7,7 @@ section.log1 .tit { margin-left: 40px; position: relative; }
 section.log1 .tit:before { content: ""; display: block; width: 30px; height: 4px; background-image: url(../data/traffic/tit_dc.png); position: absolute; top: -10px; left: 0;  }
 .left_log { width:40%;  margin-top: 10px; margin-left: 40px;  }
 
-.left_log .img { display: block; width: 110px; height: 110px; background-color:#cc99cc; border-radius: 30px; margin-right: 20px; margin-top: 10px; ; float: left; background-image: url("../data/sub/login/log.png"); background-repeat: no-repeat; background-position: center center }
+.left_log .img { display: block; width: 110px; height: 110px; background-color:#cc99cc; border-radius: 30px; margin-right: 20px; margin-top: 10px; ; float: left; background-image: url("../data/login/log.png"); background-repeat: no-repeat; background-position: center center }
 .left_log .ip_box { width: calc(100% - 130px ); float: left; }
 .left_log  input { border:1px solid gray; width:98%; height: 40px; margin-top: 5px; }
 .left_log .login,.left_log .pw { padding-left: 10px; box-sizing: border-box; margin:5px 0; }
