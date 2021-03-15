@@ -24,9 +24,8 @@
     <link rel="stylesheet" href="./css/common.css">
 
     <link rel="stylesheet" href="./css/main.css">
-
     <!--구글애널리틱스 소스코드-->
-    <script async src="./js/google_analyics.js"></script>
+ <!--   <script async src="./js/google_analyics.js"></script>-->
     <!--제이쿼리연결-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="./js/slider.js"></script>
@@ -39,7 +38,7 @@
     <script src="js/respond.js"></script>
     <![endif]-->
     <!--구글 애널리스틱 코드 복붙 : 얼마나 들어오는지 보려고-->
-    <script async src="googleanalytics.js"></script>
+<!--    <script async src="googleanalytics.js"></script>-->
     <script>
         $(document).ready(function() {
             //언어 설정
@@ -55,6 +54,33 @@
                 }
             });
         });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $(".quick").css("display","none");
+        $(window).scroll(function(){
+            var pg1 = $("#page1").offset().top;
+            var pg2 = $("#page2").offset().top;
+            var pg3 = $("#page3").offset().top;
+            var ft = $(".ft").offset().top;
+            var pgTop = $(window).scrollTop(); 
+            if(pgTop>pg1-200 && pgTop<pg2-200){
+                $(".quick").fadeIn(700);
+                $(".quick li").removeClass("on");
+                $(".quick li").eq(0).addClass("on");
+            }else if(pgTop>=pg2-200 && pgTop<pg3-200){ 
+                $(".quick li").removeClass("on");
+                $(".quick li").eq(1).addClass("on");
+            }else if(pgTop>=pg3-200 && pgTop<ft-200){ 
+                $(".quick li").removeClass("on");
+                $(".quick li").eq(2).addClass("on");
+            }else{
+                $(".quick").fadeOut(700);
+                 $(".quick li").removeClass("on");
+            }
+        });
+          
+    });
     </script>
 </head>
 
@@ -616,8 +642,7 @@
                     </div>
                 </section>
             </div>
-            <!--page3-->
-
+    
             <div class="page" id="page3">
                 <section class="page_container">
                     <h3 class="page_tit1">소식꾸러미</h3>
@@ -852,22 +877,24 @@
 
         <div class="quick">
             <ul>
-                <li class="item1">
-                    <a href="">
-                        <span class="qtxt">교통</span>
-                        <span class="qico"></span>
+                <li class="item1 on">
+                    <a href="trf.html">
+                      <span class="qtxt">교통</span>
+                       <span class="qico">아이콘1</span>
+                        
                     </a>
                 </li>
                 <li class="item2">
-                    <a href="">
-                        <span class="qtxt">축제</span>
-                        <span class="qico"></span>
+                    <a href="st01.html">
+                       <span class="qtxt">먹거리</span>
+                       <span class="qico">아이콘2</span>
+                       
                     </a>
                 </li>
                 <li class="item3">
-                    <a href="">
-                        <span class="qtxt">먹거리</span>
-                        <span class="qico"></span>
+                    <a href="ftv.html">
+                       <span class="qtxt">축제</span>
+                        <span class="qico">아이콘3</span>
                     </a>
                 </li>
             </ul>
