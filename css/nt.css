@@ -1,22 +1,45 @@
 @charset "utf-8";
 
 /*right_bar*/
-.page_content .right_bar { width:calc(100%- 253px); margin: 10px 8px; float:right; }
+.page_content .right_bar { width:calc(100%- 253px); margin: 10px 85px; float:left; }
 
-.nt_wrap { width: 95%; height: 100%; margin: 60px auto ; clear: both; }
+.nt_wrap { width: 900px; height: 100%; margin: 60px auto ; clear: both; }
 .nt_wrap .rs_form {  width: 100%; height: 100%; }
 .nt_wrap .rs_form  select.tit { width: 100px; height: 40px; padding-left: 20px; box-sizing: border-box;  clear:both; }
 .nt_wrap .rs_form .research { width: 50%; float:right }
 .nt_wrap .rs_form .research input { display: block;   float: left;  }
-.nt_wrap .rs_form .research input.txt { width: 50%; border:1px solid #ddd; height: 40px; padding-left: 20px; box-sizing: border-box; }
-.nt_wrap .rs_form .research input.re_btn { width: 20% ; border:1px solid #840880; ;height: 40px; margin-left: 10px;  background-color: #840880; color: #fff; font-weight: 600; }
+.nt_wrap .rs_form .research input.txt { width:80%; border:1px solid #ddd; height: 42px; padding-left: 20px; box-sizing: border-box; }
+.nt_wrap .rs_form .research input.re_btn { width: 20% ; border:1px solid #840880; ;height: 42px;  background-color: #840880; color: #fff; font-weight: 600; }
 
 /*a 타겟 페이지네이션하기*/
 
+section.tl  {  width: 900px; height:700px;position: relative; clear: both; padding-bottom: 30px; }
+section.tl span.l_com { display: block; width: 100%; border-top: 2px solid #000; margin-top: 50px; font-weight: 500; line-height: 5.0; }
 
+section.tl table.tb { width: 100%; height: 600px; display: table; border-collapse: collapse; margin: 0 auto; position:absolute; top: 85px; background-color: #fff; display: none; border-bottom: 1px solid #ddd; }
+section.tl table.tb_m { display: block;  width: 100%; height: 600px; }
+section.tl  .tb tr { display: table-row; }
+section.tl  .tb th,  section.tl .tb td { display: table-cell;  text-align: center; }
+section.tl  .tb th { font-size: 18px; line-height: 4.0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; } 
+section.tl .tb td.cel2 a { display: block;  line-height: 3.0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 469px; text-align: left; color:#000; }
+section.tl .tb td.cel2 a:hover { color: #840880; text-decoration: underline; }
 
+section.tl  .tb .cel1 { width: 10%; }
+section.tl  .tb .cel2 { width: 50%;}
+section.tl  .tb .cel3 { width: 12%;}
+section.tl  .tb .cel4 { width: 12%;}
+section.tl  .tb .cel5 { width: 12%;}
+
+section.tl .btn_box { clear: both;  position: absolute; bottom: 0; left: 50%; margin-left: -90px; }
+section.tl .btn_box a { display: block; float: left; width: 50px; color: #000;  }
+section.tl .btn_box a:hover { color: #840880; text-decoration: underline;}
+
+#tb01:target {display: block;}
+#tb02:target {display: block;}
+#tb03:target {display: block;}
+#tb04:target {display: block;}
 /* research 박스*/
-.research_box { clear:both;  width: 1033px; margin:0 auto;  overflow: hidden; padding-top: 20px;}
+.research_box { clear:both;  width:900px; margin:0px auto;  overflow: hidden;}
 .research_box .research_p1 { width: 100%; height: 40px; background-color: #ddd; border-radius: 5px; }
 .research_box span {display: block; float: left;  height: 30px; line-height: 30px; font-size: 15px; padding-right: 30px; padding:5px 10px; }
 
