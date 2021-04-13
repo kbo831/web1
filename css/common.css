@@ -132,14 +132,14 @@ input,button,img {border:0; outline: 0; background: none;}
 .quick li a span { display: block; float:left; line-height: 72px;  }
 .quick li a span.qtxt { display: block; width: 100px;  text-align: left; font-size: 18px; opacity:0; transition:0.5s; }
 .quick li.on a span.qtxt { opacity:1; font-weight: 600;  } 
-.quick .item1.on a span.qtxt { color:#ff6600; }
+.quick .item1.on a span.qtxt { color:#f8981d; }
 .quick .item2.on a span.qtxt { color:#82c105; }
 .quick .item3.on a span.qtxt { color:#fa4ba4; }
 
 .quick li a span.qico { width: 66px; height: 66px; background-repeat: no-repeat; background-position:center center; border:3px solid #fff; background-color: transparent; border-radius:40px;
     transition:0.5s; position:absolute; top:0px; right:50px; text-indent: -9999px;}  
  .quick li.on a span.qico { right:86px;  }
-.quick .item1 .qico { background-image: url("../data/quick/quick1.png"); background-repeat: no-repeat; background-position: center center; background-color:#ff6600; border-radius: 35px; }
+.quick .item1 .qico { background-image: url("../data/quick/quick1.png"); background-repeat: no-repeat; background-position: center center; background-color:#f8981d; border-radius: 35px; }
 .quick .item2 .qico { background-image: url("../data/quick/quick3_w.png"); background-repeat: no-repeat; background-position: center center; background-color:#82c105; border-radius: 35px;}
 .quick .item3 .qico { background-image: url("../data/quick/quick2_w.png"); background-repeat: no-repeat; background-position: center center; background-color:#fa4ba4; border-radius: 35px;}
 
@@ -147,6 +147,6 @@ input,button,img {border:0; outline: 0; background: none;}
 
 .quick li a:after { content:""; display:block; float:right; width:0px; height: 3px; top: 33px; right: -14px; transition:0.5s; position:absolute; }
 .quick li.on a:after { width: 100px; }   
-.quick li.item1 a:after { background-color:#ff6600; }    
+.quick li.item1 a:after { background-color:#f8981d; }    
 .quick li.item2 a:after { background-color:#82c105; }    
 .quick li.item3 a:after { background-color:#fa4ba4; } 
